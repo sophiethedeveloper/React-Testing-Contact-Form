@@ -24,8 +24,11 @@ test('checks all inputs and submit button', async () => {
 
     fireEvent.click(submitButton);
 
-    // console.log(firstNameInput)
     screen.debug();
+
+    const submit = screen.findByText(/submit/i)
+
+    // console.log(firstNameInput)
 
 
 })
